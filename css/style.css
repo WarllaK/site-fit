@@ -1,0 +1,308 @@
+:root {
+  --circulo-1-cor: #09a5af;
+  --cor-letras: #534f4f;
+  --cor-background: #fafafa;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.063rem;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(./img/gabin-vallet-J154nEkpzlQ-unsplash.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: var(--circulo-1-cor);
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.fundo-site {
+  margin-top: -9rem;
+  z-index: 1;
+  position: absolute;
+}
+.circulo-1 {
+  animation: surgir2 5s;
+  margin-left: -25%;
+  background-color: var(--circulo-1-cor);
+  width: 35rem;
+  height: 35rem;
+  border-radius: 100%;
+  opacity: 70%;
+}
+
+@keyframes surgir2 {
+  0% {
+    opacity: 20%;
+    margin-left: 3rem;
+  }
+  100% {
+    opacity: 70%;
+  }
+}
+
+.circulo-2 {
+  margin-left: 1.25rem;
+  background: var(--cor-letras);
+  width: 29rem;
+  height: 29rem;
+  border-radius: 100%;
+  position: relative;
+  margin-top: -32rem;
+  opacity: 98%;
+}
+
+.background {
+  margin-top: 11rem;
+}
+
+.coluna-1 h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+.coluna-1 {
+  align-items: baseline;
+  padding: 0.75rem;
+}
+
+.titulos {
+  border-bottom: 1px solid var(--cor-background);
+  /* margin-left: 28.5%; */
+  display: flex;
+  align-items: center;
+  float: right;
+}
+
+.titulos h2 {
+  color: var(--cor-background);
+  margin-left: 0.938rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.titulos h2 a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.titulos h3 {
+  margin-left: 3.125rem;
+  color: var(--circulo-1-cor);
+  border: 2px solid var(--circulo-1-cor);
+  padding: 0.625rem;
+  border-radius: 1.875rem;
+  transition: 0.5s;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.titulos h3:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.titulos h3 a {
+  text-decoration: none;
+  color: var(--circulo-1-cor);
+}
+
+.texto-apresentacao-site {
+  margin-top: 7rem;
+  margin-left: 18em;
+  position: absolute;
+  z-index: 2;
+  overflow-wrap: break-word;
+}
+
+.texto-apresentacao-site h2 {
+  animation: surgir 1s;
+  background-color: var(--cor-background);
+  height: 4rem;
+  padding: 0.7rem;
+  font-size: 4rem;
+  color: var(--cor-letras);
+  border-radius: 0.313rem;
+}
+
+@keyframes surgir {
+  0% {
+    margin-left: 3rem;
+    opacity: 15%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.texto-apresentacao-site b {
+  color: var(--circulo-1-cor);
+}
+
+.texto-apresentacao-site p {
+  margin-left: 0.8rem;
+  margin-top: -2.5rem;
+  font-size: 1.3rem;
+  color: var(--cor-background);
+}
+
+/*-----------Marca branca e o Carrossel-----------*/
+.exercicios {
+  margin-top: 50rem;
+  background: var(--cor-background);
+  height: 17rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.exercicios-conteudo {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.exercicios p {
+  color: var(--circulo-1-cor);
+  font-size: 2rem;
+}
+
+.exercicios p b {
+  color: #078d95;
+  font-size: 7rem;
+}
+
+.carrossel {
+  margin-left: 3.75rem;
+  overflow: hidden;
+  height: 25rem;
+  width: 25rem;
+  border-radius: 5%;
+}
+
+.container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrossel img {
+  object-fit: cover;
+  height: 25rem;
+  width: 25rem;
+  border-radius: 5%;
+  transition: 0.5s ease-in-out;
+}
+
+/*-----------Cards de serviços oferecidos-----------*/
+.tabelas-de-consulta {
+  text-align: center;
+  max-width: fit-content;
+  border: 3px solid var(--cor-background);
+  height: 32.5rem;
+  border-radius: 0.625rem;
+  align-items: center;
+  align-content: center;
+  margin-left: 25vh;
+  margin-right: 25vh;
+}
+.tabelas-de-consulta .titulo {
+  padding: 0.625rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+}
+.tabelas {
+  display: flex;
+  transition: 0.9s;
+  align-self: center;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.tabela-1 {
+  color: white;
+  background-color: var(--cor-letras);
+  height: 18rem;
+  width: 18rem;
+  max-width: 100vh;
+  border-radius: 1.25rem;
+  margin: 2rem;
+  text-align: center;
+  cursor: pointer;
+  border: 0.313rem solid var(--circulo-1-cor);
+  transition: 0.9s;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 1);
+  position: flex;
+}
+
+.tabela-1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.tabela-1:hover {
+  background-color: #078d95;
+  transform: scale(1.1);
+  box-shadow: 0px 1px 8px 0px black;
+}
+
+.tabela-1 figure img {
+  height: 9.375rem;
+  width: 9.375rem;
+}
+
+.tabela-1 h3 {
+  color: white;
+  height: 1.563rem;
+  background-color: var(--circulo-1-cor);
+  padding: 0.188rem;
+}
+
+.tabela-1:hover h3 {
+  background-color: white;
+  color: var(--cor-letras);
+}
+
+.tabela-1:hover a {
+  background-color: white;
+  color: var(--cor-letras);
+}
+
+/* -----------Rodapé da página-----------*/
+footer {
+  border-top: 2px solid #078d95;
+  background-color: var(--cor-background);
+  margin-bottom: -1.25rem;
+}
+.footer-conteudo {
+  margin: auto;
+  width: 28.125rem;
+  display: flex;
+  align-items: center;
+}
+.intuito-site {
+  width: 7.5rem;
+}
+.intuito-site h3 {
+  color: #078d95;
+  font-size: 1rem;
+}
+
+.logo-site img {
+  margin-left: 3.125rem;
+  width: 6.25rem;
+  height: 6.25rem;
+}
+.universidade {
+  margin-left: 3.125rem;
+}
+.universidade h3 {
+  color: #078d95;
+}

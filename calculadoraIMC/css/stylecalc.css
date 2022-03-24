@@ -1,0 +1,43 @@
+body {
+  background-image: url(./img/gabin-vallet-J154nEkpzlQ-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.calculadora-imc {
+  position: absolute;
+  background-color: #09a5af;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 30px;
+}
+
+fieldset {
+  font-size: 20px;
+  border: none;
+  padding: 30px, 30px, 10px, 30px;
+  color: #fafafa;
+}
+
+.botao-calcular input {
+  background-color: #fafafa;
+  color: #09a5af;
+  cursor: pointer;
+  font-size: 17px;
+  border-radius: 15px;
+  border: none;
+  padding: 7px;
+  margin-left: 23%;
+}
+
+input {
+  border-radius: 15px;
+}
+
+p {
+  color: #fafafa;
+  font-size: 20px;
+  text-align: center;
+}

@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2? family= Caveat+Brush & display=swap");
+
+* {
+  font-family: "Caveat Brush", cursiva;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Lesquerdo,
+.Ldireito {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Lesquerdo h1 {
+  color: #263238;
+  text-shadow: 0 0 0.2em #f87, 0 0 0.2em #55c1c8;
+}
+
+.Lesquerdo img {
+  width: 30vw;
+}
+
+.Lesquerdo a {
+  text-decoration: none;
+  font-size: 10px;
+  margin-top: -30px;
+}
+
+.card {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background-color: #ceedef;
+  box-shadow: 0 1px 30px -10px rgba(0, 0, 0, 1);
+  margin: auto;
+  border-radius: 15px;
+  transition: 0.9s;
+}
+
+.card h2 {
+  font-size: 2rem;
+  color: #263238;
+  margin: 0;
+  text-shadow: #55c1c8 0.1em 0.1em 0.2em;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 7px 0;
+  width: 100%;
+}
+
+.login input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #55c1c8;
+  color: #f1f1f1;
+  font-size: 16px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.login label {
+  color: #263238;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 800;
+  text-shadow: #55c1c8 0.1em 0.1em 0.2em;
+}
+
+.btn-entrar {
+  width: 100%;
+  padding: 16px 0;
+  margin: 25px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  background-color: #00ff88;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 1);
+  text-shadow: #55c1c8 0.1em 0.1em 0.2em;
+  transition: 1s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#sign-up {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 20%;
+  }
+  .Lesquerdo img {
+    width: 80vw;
+  }
+  .Lesquerdo h1 {
+    margin: 100px 85px 30px 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+  }
+  .Lesquerdo,
+  .Ldireito {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .card {
+    width: 70%;
+    margin-top: 10px;
+  }
+  .card h2 {
+    font-size: 3rem;
+  }
+  .login label {
+    font-size: 2rem;
+    text-shadow: none;
+  }
+  .login input,
+  .btn-entrar {
+    height: 80px;
+    font-size: 2rem;
+    border-radius: 45px;
+  }
+  span {
+    font-size: 26px;
+  }
+  a {
+    font-size: 30px;
+    font-weight: 800;
+  }
+}

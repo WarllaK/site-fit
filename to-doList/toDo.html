@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="styleToDo.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lista de tarefas</h1>
+    </header>
+
+    <main>
+      <form>
+        <div class="add_tarefa">
+          <input
+            type="text"
+            class="todo-input"
+            placeholder=" Digite sua tarefa"
+          />
+
+          <button class="todo-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="black"
+              class="bi bi-plus-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+              />
+              <path
+                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+              />
+            </svg>
+          </button>
+        </div>
+      </form>
+
+      <div class="todo-container">
+        <ul class="todo-list">
+          <!-- o codigo gerado no js:
+                <li class="todo-list">
+                    nome da tarefa
+                    <button class="completed-btn">concluir</button>
+                    <button class="trash-btn">X</button>
+                </li>
+              -->
+        </ul>
+      </div>
+    </main>
+
+    <script src="toDo.js"></script>
+  </body>
+</html>

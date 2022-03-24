@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2? family= Caveat+Brush & display=swap");
+
+* {
+  font-family: "Caveat Brush", cursiva;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #534f4f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Lesquerdo,
+.Ldireito {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Ldireito h1 {
+  color: #fafafa;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.Ldireito img {
+  width: 30vw;
+}
+
+.card {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background-color: #00bfe3;
+
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 1);
+  margin: auto;
+  border-radius: 15px;
+  transition: 0.9s;
+}
+
+.card h2 {
+  font-size: 2rem;
+  color: #fafafa;
+  margin: 0;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.contato {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 7px 0;
+  width: 100%;
+}
+
+.contato input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #534f4f;
+  color: #f1f1f1;
+  font-size: 16px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.contato label {
+  color: #fafafa;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 800;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.contato textarea {
+  width: 175px;
+  font-size: 16px;
+  color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1);
+  background-color: #534f4f;
+  padding: 10px 230px 10px 0;
+  margin-bottom: 20px;
+  align-items: center;
+  outline: none;
+}
+
+textarea {
+  padding-right: 247px;
+  padding-bottom: 20px;
+}
+
+.btn-entrar {
+  width: 100%;
+  padding: 16px 0;
+  margin: 25px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  background-color: #00ff88;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 1);
+  text-shadow: #09a5af 0.2em 0.2em 0.3em;
+  transition: 1s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Lesquerdo img {
+    width: 80vw;
+  }
+  .Lesquerdo h1 {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+  }
+  .Lesquerdo,
+  .Ldireito {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .card {
+    width: 70%;
+  }
+  .card h2 {
+    font-size: 3rem;
+  }
+  .login label {
+    font-size: 2rem;
+    text-shadow: none;
+  }
+  .login input,
+  .btn-entrar {
+    height: 80px;
+    font-size: 2rem;
+    border-radius: 45px;
+  }
+}
